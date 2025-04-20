@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tourist Attraction Directory</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Tourist Attraction Directory</h1>
+  </header>
+
+  <div class="container">
+
+    <div class="group-nav">
+      <label for="stateSelect">Filter by State:</label>
+      <select id="stateSelect">
+        <option value="all">All</option>
+      </select>
+
+      <label for="categorySelect" style="margin-left: 20px;">Filter by Category:</label>
+      <select id="categorySelect">
+        <option value="all">All</option>
+      </select>
+    </div>
+
+    <div id="attractionList" style="margin-top: 30px;"></div>
+
+    <div id="detailView" style="display: none; margin-top: 30px;"></div>
+
+    <div class="button-group" style="display: none;" id="backButtonContainer">
+      <button onclick="goBackToList()">Back to List</button>
+    </div>
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+

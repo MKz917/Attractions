@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  color: #006d77;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.attraction {
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+.attraction:last-child {
+  border-bottom: none;
+}
+
+.attraction h2 {
+  color: #023047;
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+}
+
+.attraction p {
+  margin: 5px 0;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #219ebc;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #126782;
+}
+
+.group-nav {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.group-nav select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 600px) {
+  .attraction h2 {
+    font-size: 1.1rem;
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
